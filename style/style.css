@@ -9,7 +9,7 @@
     src: url('Berserker-Regular.otf') format('opentype');
     /* Puedes ajustar la ruta según la ubicación real de tu archivo de fuente */
 }
-  
+
 body{
     margin: 0px 0px ;
     background-color:rgb(240, 255, 245);
@@ -57,7 +57,8 @@ body{
     width: auto;
     height: var(--presentation-height);
     font-family: 'Berserker-Regular';
-    font-size: calc(var(--presentation-height, 9em) * 0.33);
+    font-size: calc(var(--presentation-height, 9em) * 0.29);
+    margin-top: 8px;
 }
 #background{
     position: absolute;
@@ -76,9 +77,9 @@ body{
 
 }
 .greeting{
-    margin: 6em 1.5em 3em 3em;
+    margin: 4em 1.5em 3em 3em;
     font-size: 21px;
-    max-width: 600px;
+    max-width: 6000px;
     font-weight: bolder;
     font-family: "Berserker-Regular";
 }
@@ -86,6 +87,55 @@ body{
 .su_form{
     background-color: white;
     box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.2);
+    padding: 1em 2em 2em 1em;
+
+}
+.su_form ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    
 }
 
+.su_form li {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    width: 100vh;
+}
 
+input:focus {
+    border: 3px solid rgb(0, 157, 255);
+    box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.input-group {
+    flex-basis: 48%; 
+    display: flex;
+    flex-direction: column;
+}
+legend{
+    margin-bottom: 2em;
+
+}
+
+label{
+    font-size: 12px;
+    color: rgb(63, 63, 63);
+}
+
+.btn{
+    background-color: rgb(82, 119, 143);
+    height: 40px;
+    width: 160px;
+    border-radius: 30px;
+    border: 1px inset rgb(28 36 41);
+}
+.not-account{
+ padding-left: 6em;
+}
