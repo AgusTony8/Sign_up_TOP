@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
+    <script src="./app/code.js" defer></script> <!-- defer lo que hace es que se ejecute despues de cargar la pag -->
     <title>sign_up_OTP</title>
 </head>
 <body>
@@ -22,20 +23,20 @@
              then i must be doing something good!</p>
             <p>Like <i>relly good.</i></p>
         </div>
-        <form action="http//myexaplepage.com" method="post" class="su_form">
+        <form action="" method="post" class="su_form">
             
             <ul>
                 <legend>Let's do this!!!</legend>
                 <li>
                     <div class="input-group">
                     <label for="name">FIRST NAME</label>
-                    <input type="text" id="name" name="usr_name">
+                    <input type="text" id="name" name="usr_name" placeholder="My name..." required>
                     
 
                     </div> 
                     <div class="input-group">
                          <label for="last_name">LAST NAME</label>
-                    <input type="text" id="last_name" name="usr_last_name">
+                    <input type="text" id="last_name" name="usr_last_name" placeholder="My last name.." required>
                     </div>                   
                    
                 </li>
@@ -43,12 +44,12 @@
                 <li>
                     <div class="input-group">
                     <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="usr_email">
+                    <input type="email" id="email" name="usr_email" placeholder="myemail@mail.com" required>
                     </div>
 
                     <div class="input-group">
                     <label for="ph_number">PHONE NUMBER</label>
-                    <input type="number" id="ph_number" name="usr_ph_number">
+                    <input type="number" id="ph_number" name="usr_ph_number" placeholder="123456789" required>
                     
                     </div>
                 </li>
@@ -57,17 +58,18 @@
                 <li>
                     <div class="input-group">
                     <label for="psswr">PASSWORD</label>
-                    <input type="password" id="psswr" name="usr_psswr">
+                    <input type="password" id="psswr" name="usr_psswr" required minlength="3" maxlength="9">
+                    <p id="error-msg"></p>
 
                     </div>
                     <div class="input-group">
                     <label for="confirm_psswr">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm_psswr" name="psswr_to_confirm">
+                    <input type="password" id="confirm_psswr" name="psswr_to_confirm" required minlength="3" maxlength="9">
                     </div>
                     
                 </li>
                 <li >
-                    <button class="btn">Create account</button>
+                    <button id="btn">Create account</button>
                 </li>
         </ul>
         
